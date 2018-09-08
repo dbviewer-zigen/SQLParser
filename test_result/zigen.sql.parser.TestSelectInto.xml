@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?><Node text="root">
+ <ASTSelectStatement text="SelectStatement">
+  <ASTSelect text="select">
+   <ASTColumn text="*" />
+  </ASTSelect>
+  <ASTInto text="INTO OUTFILE ">
+   <ASTOutfile text="OUTFILE ""/tmp/output.txt""" />
+  </ASTInto>
+  <ASTFrom text="from">
+   <ASTTable text="user_m" />
+  </ASTFrom>
+ </ASTSelectStatement>
+</Node>

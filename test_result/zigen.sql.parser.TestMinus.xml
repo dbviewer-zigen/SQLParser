@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?><Node text="root">
+ <ASTSelectStatement text="SelectStatement">
+  <ASTSelect text="select">
+   <ASTFunction text="COUNT">
+    <ASTParentheses text="">
+     <ASTColumn text="A.*" />
+    </ASTParentheses>
+   </ASTFunction>
+  </ASTSelect>
+  <ASTFrom text="from">
+   <ASTTable text="MAAT0010 AS A">
+    <ASTInnerAlias text="A" />
+   </ASTTable>
+  </ASTFrom>
+ </ASTSelectStatement>
+ <ASTMinus text="ASTMinus" />
+ <ASTSelectStatement text="SelectStatement">
+  <ASTSelect text="select">
+   <ASTFunction text="COUNT">
+    <ASTParentheses text="">
+     <ASTColumn text="B.*" />
+    </ASTParentheses>
+   </ASTFunction>
+  </ASTSelect>
+  <ASTFrom text="from">
+   <ASTTable text="MAAT0010 AS B">
+    <ASTInnerAlias text="B" />
+   </ASTTable>
+  </ASTFrom>
+ </ASTSelectStatement>
+</Node>

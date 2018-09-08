@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?><Node text="root">
+ <ASTSelectStatement text="SelectStatement">
+  <ASTSelect text="select">
+   <ASTColumn text="TENCD" />
+  </ASTSelect>
+  <ASTFrom text="from">
+   <ASTParentheses text="">
+    <ASTSelectStatement text="SelectStatement">
+     <ASTSelect text="select">
+      <ASTColumn text="MISE.TENCD" />
+     </ASTSelect>
+     <ASTFrom text="from">
+      <ASTParentheses text="JISSEKI">
+       <ASTSelectStatement text="SelectStatement">
+        <ASTSelect text="select">
+         <ASTColumn text="TENCD" />
+        </ASTSelect>
+        <ASTFrom text="from">
+         <ASTTable text="MAMV0120" />
+        </ASTFrom>
+       </ASTSelectStatement>
+       <ASTInnerAlias text="JISSEKI" />
+      </ASTParentheses>
+     </ASTFrom>
+    </ASTSelectStatement>
+   </ASTParentheses>
+  </ASTFrom>
+ </ASTSelectStatement>
+ <ASTUnion text="ASTUnion All" />
+ <ASTSelectStatement text="SelectStatement">
+  <ASTSelect text="select">
+   <ASTValue text="999999 AS TENCD">
+    <ASTInnerAlias text="TENCD" />
+   </ASTValue>
+  </ASTSelect>
+  <ASTFrom text="from">
+   <ASTParentheses text="">
+    <ASTSelectStatement text="SelectStatement">
+     <ASTSelect text="select">
+      <ASTColumn text="JISSEKI.BUNRUI" />
+     </ASTSelect>
+     <ASTFrom text="from">
+      <ASTParentheses text="JISSEKI">
+       <ASTSelectStatement text="SelectStatement">
+        <ASTSelect text="select">
+         <ASTColumn text="BUNRUI" />
+        </ASTSelect>
+        <ASTFrom text="from">
+         <ASTTable text="MAMV0120" />
+        </ASTFrom>
+       </ASTSelectStatement>
+       <ASTInnerAlias text="JISSEKI" />
+      </ASTParentheses>
+     </ASTFrom>
+    </ASTSelectStatement>
+   </ASTParentheses>
+  </ASTFrom>
+ </ASTSelectStatement>
+</Node>

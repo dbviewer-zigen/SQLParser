@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?><Node text="root">
+ <ASTDeleteStatement text="delete">
+  <ASTFrom text="from">
+   <ASTTable text="TBL" />
+  </ASTFrom>
+  <ASTWhere text="where">
+   <ASTExpression text="expression">
+    <ASTOperator text="=">
+     <ASTColumn text="COL" />
+     <ASTValue text="1" />
+    </ASTOperator>
+   </ASTExpression>
+  </ASTWhere>
+ </ASTDeleteStatement>
+</Node>

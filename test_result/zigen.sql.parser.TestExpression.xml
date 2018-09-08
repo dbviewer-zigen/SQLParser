@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?><Node text="root">
+ <ASTSelectStatement text="SelectStatement">
+  <ASTSelect text="select" />
+  <ASTWhere text="where">
+   <ASTExpression text="expression">
+    <ASTOperator text="=">
+     <ASTOperator text="+">
+      <ASTOperator text="*">
+       <ASTValue text="1" />
+       <ASTValue text="2" />
+      </ASTOperator>
+      <ASTValue text="4" />
+     </ASTOperator>
+     <ASTColumn text="COL2" />
+    </ASTOperator>
+   </ASTExpression>
+  </ASTWhere>
+ </ASTSelectStatement>
+</Node>

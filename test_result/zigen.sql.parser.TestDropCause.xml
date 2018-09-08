@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?><Node text="root">
+ <ASTDropStatement text="drop">
+  <ASTType text="table" />
+  <ASTTarget text="TBL" />
+ </ASTDropStatement>
+</Node>

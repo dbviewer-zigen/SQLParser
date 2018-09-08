@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?><Node text="root">
+ <ASTCreateStatement text="create">
+  <ASTType text="sequence">
+   <ASTTarget text="test_seq" />
+  </ASTType>
+ </ASTCreateStatement>
+</Node>

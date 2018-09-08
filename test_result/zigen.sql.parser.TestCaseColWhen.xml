@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?><Node text="root">
+ <ASTFunction text="LOCATE">
+  <ASTParentheses text="">
+   <ASTValue text="'unsigned'" />
+   <ASTComma text="," />
+   <ASTColumn text="COLUMN_TYPE" />
+  </ASTParentheses>
+ </ASTFunction>
+</Node>

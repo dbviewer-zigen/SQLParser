@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?><Node text="root">
+ <ASTCreateStatement text="create or replace">
+  <ASTType text="PROCEDURE">
+   <ASTTarget text="SP_TEST2" />
+  </ASTType>
+ </ASTCreateStatement>
+</Node>

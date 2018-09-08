@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?><Node text="root">
+ <ASTSelectStatement text="SelectStatement">
+  <ASTSelect text="select">
+   <ASTColumn text="*" />
+  </ASTSelect>
+  <ASTFrom text="from">
+   <ASTTable text="EMP" />
+  </ASTFrom>
+  <ASTWhere text="where">
+   <ASTColumn text="DEPTNO" />
+   <ASTKeyword text="IN" />
+   <ASTParentheses text="">
+    <ASTSelectStatement text="SelectStatement">
+     <ASTSelect text="select">
+      <ASTColumn text="DEPTNO" />
+     </ASTSelect>
+     <ASTFrom text="from">
+      <ASTTable text="DEPT" />
+     </ASTFrom>
+    </ASTSelectStatement>
+   </ASTParentheses>
+  </ASTWhere>
+ </ASTSelectStatement>
+</Node>

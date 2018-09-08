@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?><Node text="root">
+ <ASTSelectStatement text="SelectStatement">
+  <ASTSelect text="select">
+   <ASTFunction text="count">
+    <ASTParentheses text="">
+     <ASTValue text="1" />
+    </ASTParentheses>
+   </ASTFunction>
+  </ASTSelect>
+  <ASTFrom text="from">
+   <ASTTable text="syscat.SCHEMATA AS s">
+    <ASTInnerAlias text="s" />
+   </ASTTable>
+   <ASTJoin text="JOIN" />
+   <ASTTable text="syscat.tables AS t">
+    <ASTInnerAlias text="t" />
+   </ASTTable>
+   <ASTOn text="ON" />
+   <ASTExpression text="expression">
+    <ASTOperator text="=">
+     <ASTColumn text="s.SCHEMANAME" />
+     <ASTColumn text="t.TABSCHEMA" />
+    </ASTOperator>
+   </ASTExpression>
+  </ASTFrom>
+  <ASTWhere text="where">
+   <ASTExpression text="expression">
+    <ASTOperator text="=">
+     <ASTColumn text="s.SCHEMANAME" />
+     <ASTValue text="'SYSCAT  '" />
+    </ASTOperator>
+   </ASTExpression>
+  </ASTWhere>
+ </ASTSelectStatement>
+</Node>

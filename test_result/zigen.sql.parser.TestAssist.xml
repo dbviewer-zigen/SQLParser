@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?><Node text="root">
+ <ASTSelectStatement text="SelectStatement">
+  <ASTSelect text="select">
+   <ASTFunction text="COUNT">
+    <ASTParentheses text="">
+     <ASTColumn text="*" />
+    </ASTParentheses>
+   </ASTFunction>
+  </ASTSelect>
+ </ASTSelectStatement>
+</Node>

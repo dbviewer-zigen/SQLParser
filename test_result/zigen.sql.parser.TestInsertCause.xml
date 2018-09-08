@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?><Node text="root">
+ <ASTInsertStatement text="insert">
+  <ASTInto text="INTO">
+   <ASTTable text="TBL" />
+  </ASTInto>
+  <ASTSelectStatement text="SelectStatement">
+   <ASTSelect text="select">
+    <ASTColumn text="*" />
+   </ASTSelect>
+   <ASTFrom text="from">
+    <ASTTable text="TBL" />
+   </ASTFrom>
+  </ASTSelectStatement>
+ </ASTInsertStatement>
+</Node>

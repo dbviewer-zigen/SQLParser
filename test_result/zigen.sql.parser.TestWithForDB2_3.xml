@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?><Node text="root">
+ <ASTKeyword text="with" />
+ <ASTColumn text="tmp_table" />
+ <ASTParentheses text="">
+  <ASTSelectStatement text="SelectStatement">
+   <ASTSelect text="select">
+    <ASTCaseCause text="dummy_value">
+     <ASTCase text="case" />
+     <ASTWhen text="when">
+      <ASTParentheses text="">
+       <ASTExpression text="expression">
+        <ASTOperator text="=">
+         <ASTValue text="1" />
+         <ASTParentheses text="">
+          <ASTSelectStatement text="SelectStatement">
+           <ASTSelect text="select">
+            <ASTValue text="1" />
+           </ASTSelect>
+           <ASTFrom text="from">
+            <ASTTable text="syscat.SCHEMATA AS s">
+             <ASTInnerAlias text="s" />
+            </ASTTable>
+            <ASTJoin text="JOIN" />
+            <ASTTable text="syscat.tables AS t">
+             <ASTInnerAlias text="t" />
+            </ASTTable>
+            <ASTOn text="ON" />
+            <ASTExpression text="expression">
+             <ASTOperator text="=">
+              <ASTColumn text="s.SCHEMANAME" />
+              <ASTColumn text="t.TABSCHEMA" />
+             </ASTOperator>
+            </ASTExpression>
+           </ASTFrom>
+           <ASTWhere text="where">
+            <ASTExpression text="expression">
+             <ASTOperator text="=">
+              <ASTColumn text="s.SCHEMANAME" />
+              <ASTValue text="'SYSCAT  '" />
+             </ASTOperator>
+            </ASTExpression>
+           </ASTWhere>
+          </ASTSelectStatement>
+         </ASTParentheses>
+        </ASTOperator>
+       </ASTExpression>
+      </ASTParentheses>
+     </ASTWhen>
+     <ASTThen text="then">
+      <ASTValue text="'A'" />
+     </ASTThen>
+     <ASTElse text="else">
+      <ASTValue text="'B'" />
+     </ASTElse>
+     <ASTInnerAlias text="dummy_value" />
+    </ASTCaseCause>
+   </ASTSelect>
+   <ASTFrom text="from">
+    <ASTTable text="syscat.SCHEMATA" />
+   </ASTFrom>
+  </ASTSelectStatement>
+ </ASTParentheses>
+ <ASTSelectStatement text="SelectStatement">
+  <ASTSelect text="select">
+   <ASTColumn text="*" />
+  </ASTSelect>
+  <ASTFrom text="from">
+   <ASTTable text="tmp_table" />
+  </ASTFrom>
+ </ASTSelectStatement>
+</Node>

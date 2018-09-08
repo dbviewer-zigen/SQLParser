@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?><Node text="root">
+ <ASTSelectStatement text="SelectStatement">
+  <ASTSelect text="select">
+   <ASTBind text=":P1" />
+  </ASTSelect>
+  <ASTFrom text="from">
+   <ASTBind text=":P2" />
+  </ASTFrom>
+  <ASTWhere text="where">
+   <ASTExpression text="expression">
+    <ASTOperator text="=">
+     <ASTColumn text="COL1" />
+     <ASTBind text=":P3" />
+    </ASTOperator>
+   </ASTExpression>
+  </ASTWhere>
+ </ASTSelectStatement>
+</Node>

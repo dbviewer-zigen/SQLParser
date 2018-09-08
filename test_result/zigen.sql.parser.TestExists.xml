@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?><Node text="root">
+ <ASTSelectStatement text="SelectStatement">
+  <ASTSelect text="select">
+   <ASTColumn text="COOP_CD" />
+   <ASTComma text="," />
+   <ASTColumn text="KNO" />
+   <ASTComma text="," />
+   <ASTColumn text="KIKANO" />
+  </ASTSelect>
+  <ASTFrom text="from">
+   <ASTTable text="H_T_KYONYUF_KJI_T AS A">
+    <ASTInnerAlias text="A" />
+   </ASTTable>
+  </ASTFrom>
+  <ASTWhere text="where">
+   <ASTKeyword text="NOT" />
+   <ASTKeyword text="EXISTS" />
+   <ASTParentheses text="">
+    <ASTSelectStatement text="SelectStatement">
+     <ASTSelect text="select">
+      <ASTValue text="'X'" />
+     </ASTSelect>
+     <ASTFrom text="from">
+      <ASTTable text="H_M_TEIKIKIHONMST_T AS B">
+       <ASTInnerAlias text="B" />
+      </ASTTable>
+     </ASTFrom>
+     <ASTWhere text="where">
+      <ASTExpression text="expression">
+       <ASTOperator text="=">
+        <ASTColumn text="A.COOP_CD" />
+        <ASTColumn text="B.COOP_CD" />
+       </ASTOperator>
+      </ASTExpression>
+      <ASTKeyword text="AND" />
+      <ASTExpression text="expression">
+       <ASTOperator text="=">
+        <ASTColumn text="A.KNO" />
+        <ASTColumn text="B.KNO" />
+       </ASTOperator>
+      </ASTExpression>
+      <ASTKeyword text="AND" />
+      <ASTExpression text="expression">
+       <ASTOperator text="=">
+        <ASTColumn text="A.KIKANO" />
+        <ASTColumn text="B.KIKANO" />
+       </ASTOperator>
+      </ASTExpression>
+      <ASTKeyword text="AND" />
+      <ASTExpression text="expression">
+       <ASTOperator text="=">
+        <ASTColumn text="B.COOP_CD" />
+        <ASTValue text="493" />
+       </ASTOperator>
+      </ASTExpression>
+     </ASTWhere>
+    </ASTSelectStatement>
+   </ASTParentheses>
+   <ASTKeyword text="AND" />
+   <ASTExpression text="expression">
+    <ASTOperator text="=">
+     <ASTColumn text="A.KNO" />
+     <ASTValue text="72060" />
+    </ASTOperator>
+   </ASTExpression>
+   <ASTKeyword text="AND" />
+   <ASTExpression text="expression">
+    <ASTOperator text="=">
+     <ASTColumn text="A.KIKANO" />
+     <ASTValue text="212181" />
+    </ASTOperator>
+   </ASTExpression>
+  </ASTWhere>
+ </ASTSelectStatement>
+</Node>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?><Node text="root">
+ <ASTSelectStatement text="SelectStatement">
+  <ASTSelect text="select">
+   <ASTColumn text="EMPNO" />
+   <ASTComma text="," />
+   <ASTParentheses text="MAXEMP">
+    <ASTSelectStatement text="SelectStatement">
+     <ASTSelect text="select">
+      <ASTColumn text="EMPNO" />
+     </ASTSelect>
+     <ASTFrom text="from">
+      <ASTTable text="EMP" />
+     </ASTFrom>
+    </ASTSelectStatement>
+    <ASTInnerAlias text="MAXEMP" />
+   </ASTParentheses>
+   <ASTComma text="," />
+  </ASTSelect>
+ </ASTSelectStatement>
+</Node>
